@@ -41,6 +41,17 @@ h2 {
     margin-left: 0px;
 }
 
+.links-menu ul {
+    list-style: none;
+    gap: 25px;
+    display: flex;
+
+}
+
+.links-menu li {
+    margin: 0px;
+}
+
 .mi-nombre {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
