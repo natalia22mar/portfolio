@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 80px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.barra-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 25px 40px;
+    background: #ffffff;
+    z-index: 999;
+}
+
+.links-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+}
+
+.mi-nombre {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.links-menu a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/*ratón por encima de los enlaces*/
+.links-menu a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+.portada {
+    height: 90vh;
+    background-color: #FFDEF9;
+    text-align: center;
+    padding-top: 35vh;
+}
+
+.sección-trabajos {
+    padding: 80px 40px;
+    background-color: #FFD6F3;
+}
+
+.contenedor-galería {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.fotos {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.fotos video {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.fotos img {
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.fotos h3 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.biografía {
+    padding: 100px 40px;
+    background-color: #FC90DC;
+    color: #fff;
+    text-align: center;
+}
+
+.biografía p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+footer {
+    padding: 60px 40px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    background-color: #FFDEF9;
+}
+
+.contacto a {
+    color: #333;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.contacto a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+.ubicación {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .fotos {
+        width: 45%;
+    }
+
+    .barra-nav {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .fotos {
+        width: 100%;
+    }
+}
