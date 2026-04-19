@@ -33,6 +33,7 @@ h2 {
     padding: 25px 40px;
     background: #ffffff;
     z-index: 999;
+    align-items: center;
 }
 
 .links-menu {
