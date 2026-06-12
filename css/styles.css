@@ -105,12 +105,13 @@ h2 {
 
 .hero-texto p {
     font-size: 2.15rem;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
     line-height: 1.45;
 }
 
 .hero-texto .intro {
     color: #5d645f;
+    margin-top: -6px;
 }
 
 .foto-hero {
@@ -185,18 +186,22 @@ h2 {
 }
 
 .biografía {
-    padding: 155px 72px;
+    padding: 145px 72px;
     background-color: #e3e5e1;
     color: #1f2328;
     text-align: center;
 }
 
+.biografía h2 {
+    margin-bottom: 36px;
+}
+
 .biografía p {
-    max-width: 1250px;
+    max-width: 1050px;
     margin: 0 auto;
-    font-size: 1.85rem;
-    line-height: 1.8;
-    text-align: left;
+    font-size: 1.75rem;
+    line-height: 1.75;
+    text-align: center;
 }
 
 .biografía p + p {
@@ -301,6 +306,10 @@ footer .contacto {
         font-size: 1.75rem;
     }
 
+    .hero-texto .intro {
+        margin-top: -4px;
+    }
+
     .foto-hero {
         width: min(90vw, 700px);
         min-width: 0;
@@ -365,7 +374,7 @@ footer .contacto {
 
     .biografía p {
         font-size: 1.45rem;
-        text-align: left;
+        text-align: center;
     }
 
     .sección-trabajos h2 {
