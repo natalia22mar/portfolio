@@ -7,27 +7,35 @@
   font-family: "Open Sans", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     background-color: #f6f5f2;
     color: #1f2328;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 h1 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 80px;
+    font-size: 86px;
     letter-spacing: 0px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    line-height: 0.95;
 }
 
 h2 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 40px;
-    margin-bottom: 40px;
+    font-size: 48px;
+    margin-bottom: 42px;
     color: #1f2328;
+    line-height: 1.15;
 }
 
 .barra-nav {
@@ -35,25 +43,25 @@ h2 {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    padding: 25px 40px;
+    justify-content: space-between;
+    padding: 26px 56px;
     background: #ffffff;
     border-bottom: 1px solid #e4e2dd;
     z-index: 999;
     align-items: center;
+    gap: 24px;
 }
 
 .links-menu {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0px;
 }
 
 .links-menu ul {
     list-style: none;
-    gap: 25px;
     display: flex;
-
+    gap: 28px;
+    padding: 0;
 }
 
 .links-menu li {
@@ -63,14 +71,14 @@ h2 {
 .mi-nombre {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .links-menu a {
     text-decoration: none;
     color: #2d3135;
-    margin-left: 20px;
     font-weight: 600;
+    font-size: 1.05rem;
     transition: 0.3s;
 }
 
@@ -81,14 +89,40 @@ h2 {
 }
 
 .portada {
-    height: 90vh;
+    min-height: 90vh;
     background-color: #eeeeeb;
-    text-align: center;
-    padding-top: 35vh;
+    padding: 145px 56px 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.hero-texto {
+    max-width: 650px;
+}
+
+.hero-texto p {
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+}
+
+.hero-texto .intro {
+    color: #5d645f;
+}
+
+.foto-hero {
+    width: min(36vw, 430px);
+    min-width: 310px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 8px;
+    box-shadow: 0 18px 42px rgba(31, 35, 40, 0.12);
 }
 
 .sección-trabajos {
-    padding: 80px 40px;
+    padding: 105px 48px 115px;
     background-color: #f7f7f5;
 }
 
@@ -97,11 +131,11 @@ h2 {
 }
 
 .contenedor-galería {
-    width: min(100%, 1040px);
+    width: min(100%, 1280px);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
     align-items: stretch;
 }
 
@@ -122,10 +156,10 @@ h2 {
 
 .fotos img {
     width: 100%;
-    height: 360px;
+    height: 420px;
     display: block;
     object-fit: contain;
-    padding: 16px;
+    padding: 20px;
     background-color: #f1f0ed;
     transition: transform 0.4s ease;
 }
@@ -135,43 +169,54 @@ h2 {
 }
 
 .fotos h3 {
-    min-height: 68px;
+    min-height: 84px;
     display: flex;
     align-items: center;
-    padding: 16px 20px;
-    font-size: 1.1rem;
+    padding: 22px 24px;
+    font-size: 1.3rem;
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.25;
     background-color: #ffffff;
 }
 
 .biografía {
-    padding: 100px 40px;
+    padding: 105px 48px;
     background-color: #e3e5e1;
     color: #1f2328;
     text-align: center;
 }
 
 .biografía p {
-    max-width: 600px;
+    max-width: 760px;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     line-height: 1.8;
 }
 
 footer {
-    padding: 60px 40px;
+    padding: 76px 48px 66px;
     text-align: center;
     border-top: 1px solid #ddd9d1;
     background-color: #eeeeeb;
 }
+
+footer h2 {
+    margin-bottom: 22px;
+}
+
+footer p {
+    margin-bottom: 22px;
+    font-size: 1.2rem;
+}
+
 .contacto {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 .contacto a {
     color: #2d3135;
     margin: 0 10px;
     font-weight: bold;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 
@@ -192,27 +237,73 @@ footer {
 
 @media (max-width: 800px) {
     h1 {
-        font-size: 50px;
+        font-size: 58px;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 34px;
+    }
+
+    .portada {
+        min-height: auto;
+        padding: 135px 30px 76px;
+        flex-direction: column;
+        gap: 36px;
+        text-align: center;
+    }
+
+    .hero-texto p {
+        font-size: 1.25rem;
+    }
+
+    .foto-hero {
+        width: min(78vw, 400px);
+        min-width: 0;
     }
 
     .sección-trabajos {
-        padding: 70px 24px;
+        padding: 84px 28px;
     }
 
     .contenedor-galería {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
     }
 
     .fotos img {
-        height: 320px;
+        height: 380px;
     }
 
     .barra-nav {
-        padding: 20px;
+        padding: 20px 28px;
     }
 }
 
 @media (max-width: 500px) {
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .barra-nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .links-menu ul {
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+
+    .portada {
+        padding-top: 185px;
+    }
+
     .contenedor-galería {
         grid-template-columns: 1fr;
         gap: 22px;
@@ -220,5 +311,9 @@ footer {
 
     .fotos h3 {
         min-height: auto;
+    }
+
+    .fotos img {
+        height: 360px;
     }
 }
