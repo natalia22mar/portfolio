@@ -17,23 +17,23 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f6f5f2;
     color: #1f2328;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.6;
 }
 
 h1 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 86px;
+    font-size: 150px;
     letter-spacing: 0px;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
     line-height: 0.95;
 }
 
 h2 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 48px;
-    margin-bottom: 42px;
+    font-size: 78px;
+    margin-bottom: 64px;
     color: #1f2328;
     line-height: 1.15;
 }
@@ -44,7 +44,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 26px 56px;
+    padding: 40px 88px;
     background: #ffffff;
     border-bottom: 1px solid #e4e2dd;
     z-index: 999;
@@ -60,7 +60,7 @@ h2 {
 .links-menu ul {
     list-style: none;
     display: flex;
-    gap: 28px;
+    gap: 52px;
     padding: 0;
 }
 
@@ -71,14 +71,14 @@ h2 {
 .mi-nombre {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
 }
 
 .links-menu a {
     text-decoration: none;
     color: #2d3135;
     font-weight: 600;
-    font-size: 1.05rem;
+    font-size: 1.55rem;
     transition: 0.3s;
 }
 
@@ -89,22 +89,24 @@ h2 {
 }
 
 .portada {
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: #eeeeeb;
-    padding: 145px 56px 86px;
+    padding: 205px 88px 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 140px;
 }
 
 .hero-texto {
-    max-width: 650px;
+    max-width: 980px;
+    flex: 1 1 52%;
 }
 
 .hero-texto p {
-    font-size: 1.45rem;
-    margin-bottom: 10px;
+    font-size: 2.15rem;
+    margin-bottom: 14px;
+    line-height: 1.45;
 }
 
 .hero-texto .intro {
@@ -112,8 +114,9 @@ h2 {
 }
 
 .foto-hero {
-    width: min(36vw, 430px);
-    min-width: 310px;
+    width: min(42vw, 720px);
+    min-width: 500px;
+    flex: 0 1 720px;
     aspect-ratio: 4 / 5;
     object-fit: cover;
     object-position: center top;
@@ -122,20 +125,22 @@ h2 {
 }
 
 .sección-trabajos {
-    padding: 105px 48px 115px;
+    padding: 135px 64px 145px;
     background-color: #f7f7f5;
 }
 
 .sección-trabajos h2 {
     text-align: center;
+    font-size: 68px;
+    margin-bottom: 58px;
 }
 
 .contenedor-galería {
-    width: min(100%, 1280px);
+    width: min(100%, 1620px);
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 34px;
+    gap: 48px;
     align-items: stretch;
 }
 
@@ -156,10 +161,10 @@ h2 {
 
 .fotos img {
     width: 100%;
-    height: 420px;
+    height: 610px;
     display: block;
     object-fit: contain;
-    padding: 20px;
+    padding: 24px;
     background-color: #f1f0ed;
     transition: transform 0.4s ease;
 }
@@ -169,32 +174,32 @@ h2 {
 }
 
 .fotos h3 {
-    min-height: 84px;
+    min-height: 110px;
     display: flex;
     align-items: center;
-    padding: 22px 24px;
-    font-size: 1.3rem;
+    padding: 26px 28px;
+    font-size: 1.72rem;
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.25;
     background-color: #ffffff;
 }
 
 .biografía {
-    padding: 105px 48px;
+    padding: 155px 72px;
     background-color: #e3e5e1;
     color: #1f2328;
     text-align: center;
 }
 
 .biografía p {
-    max-width: 760px;
+    max-width: 1120px;
     margin: 0 auto;
-    font-size: 1.35rem;
+    font-size: 1.9rem;
     line-height: 1.8;
 }
 
 footer {
-    padding: 76px 48px 66px;
+    padding: 115px 72px 82px;
     text-align: center;
     border-top: 1px solid #ddd9d1;
     background-color: #eeeeeb;
@@ -205,18 +210,23 @@ footer h2 {
 }
 
 footer p {
-    margin-bottom: 22px;
-    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-size: 1.7rem;
 }
 
 .contacto {
-    margin-bottom: 24px;
+    margin-bottom: 14px;
 }
+
+footer .contacto {
+    margin-bottom: 8px;
+}
+
 .contacto a {
     color: #2d3135;
     margin: 0 10px;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     text-decoration: none;
 }
 
@@ -227,7 +237,9 @@ footer p {
 
 
 .ubicación a {
+    display: inline-block;
     text-decoration: none;
+    font-size: 1.45rem;
 }
 
 .ubicación a:hover {
@@ -237,56 +249,66 @@ footer p {
 
 @media (max-width: 800px) {
     h1 {
-        font-size: 58px;
+        font-size: 88px;
     }
 
     h2 {
-        font-size: 40px;
-        margin-bottom: 34px;
+        font-size: 62px;
+        margin-bottom: 48px;
     }
 
     .portada {
         min-height: auto;
-        padding: 135px 30px 76px;
+        padding: 210px 38px 105px;
         flex-direction: column;
-        gap: 36px;
+        gap: 56px;
         text-align: center;
     }
 
+    .hero-texto {
+        max-width: 780px;
+    }
+
     .hero-texto p {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
 
     .foto-hero {
-        width: min(78vw, 400px);
+        width: min(88vw, 640px);
         min-width: 0;
+        flex-basis: auto;
+    }
+
+    .sección-trabajos h2 {
+        font-size: 54px;
+        margin-bottom: 42px;
     }
 
     .sección-trabajos {
-        padding: 84px 28px;
+        padding: 110px 34px;
     }
 
     .contenedor-galería {
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        gap: 28px;
     }
 
     .fotos img {
-        height: 380px;
+        height: 520px;
     }
 
     .barra-nav {
-        padding: 20px 28px;
+        padding: 32px 42px;
     }
 }
 
 @media (max-width: 500px) {
     h1 {
-        font-size: 46px;
+        font-size: 66px;
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 52px;
     }
 
     .barra-nav {
@@ -296,12 +318,25 @@ footer p {
     }
 
     .links-menu ul {
-        gap: 14px;
+        gap: 18px;
         flex-wrap: wrap;
     }
 
     .portada {
-        padding-top: 185px;
+        padding: 260px 24px 92px;
+        gap: 46px;
+    }
+
+    .hero-texto p {
+        font-size: 1.5rem;
+    }
+
+    .foto-hero {
+        width: 92vw;
+    }
+
+    .sección-trabajos h2 {
+        font-size: 46px;
     }
 
     .contenedor-galería {
@@ -314,6 +349,6 @@ footer p {
     }
 
     .fotos img {
-        height: 360px;
+        height: 500px;
     }
 }
