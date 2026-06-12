@@ -44,7 +44,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 40px 88px;
+    padding: 44px 96px;
     background: #ffffff;
     border-bottom: 1px solid #e4e2dd;
     z-index: 999;
@@ -60,7 +60,7 @@ h2 {
 .links-menu ul {
     list-style: none;
     display: flex;
-    gap: 52px;
+    gap: 58px;
     padding: 0;
 }
 
@@ -71,14 +71,14 @@ h2 {
 .mi-nombre {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 2.8rem;
+    font-size: 3.05rem;
 }
 
 .links-menu a {
     text-decoration: none;
     color: #2d3135;
     font-weight: 600;
-    font-size: 1.55rem;
+    font-size: 1.72rem;
     transition: 0.3s;
 }
 
@@ -91,16 +91,16 @@ h2 {
 .portada {
     min-height: 100vh;
     background-color: #eeeeeb;
-    padding: 205px 88px 120px;
+    padding: 220px 96px 125px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 140px;
+    gap: 120px;
 }
 
 .hero-texto {
-    max-width: 980px;
-    flex: 1 1 52%;
+    max-width: 900px;
+    flex: 1 1 48%;
 }
 
 .hero-texto p {
@@ -114,9 +114,9 @@ h2 {
 }
 
 .foto-hero {
-    width: min(42vw, 720px);
-    min-width: 500px;
-    flex: 0 1 720px;
+    width: min(46vw, 820px);
+    min-width: 560px;
+    flex: 0 1 820px;
     aspect-ratio: 4 / 5;
     object-fit: cover;
     object-position: center top;
@@ -192,10 +192,15 @@ h2 {
 }
 
 .biografía p {
-    max-width: 1120px;
+    max-width: 1250px;
     margin: 0 auto;
-    font-size: 1.9rem;
+    font-size: 1.85rem;
     line-height: 1.8;
+    text-align: left;
+}
+
+.biografía p + p {
+    margin-top: 28px;
 }
 
 footer {
@@ -247,6 +252,29 @@ footer .contacto {
 
 }
 
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 112px;
+    }
+
+    .portada {
+        padding: 210px 56px 110px;
+        flex-direction: column;
+        gap: 64px;
+        text-align: center;
+    }
+
+    .hero-texto {
+        max-width: 980px;
+    }
+
+    .foto-hero {
+        width: min(76vw, 720px);
+        min-width: 0;
+        flex-basis: auto;
+    }
+}
+
 @media (max-width: 800px) {
     h1 {
         font-size: 88px;
@@ -274,7 +302,7 @@ footer .contacto {
     }
 
     .foto-hero {
-        width: min(88vw, 640px);
+        width: min(90vw, 700px);
         min-width: 0;
         flex-basis: auto;
     }
@@ -298,7 +326,7 @@ footer .contacto {
     }
 
     .barra-nav {
-        padding: 32px 42px;
+        padding: 34px 44px;
     }
 }
 
@@ -333,6 +361,11 @@ footer .contacto {
 
     .foto-hero {
         width: 92vw;
+    }
+
+    .biografía p {
+        font-size: 1.45rem;
+        text-align: left;
     }
 
     .sección-trabajos h2 {
